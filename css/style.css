@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 564px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav__list,
+.description-list,
+.advantages-list,
+.footer-social,
+.modal-dates,
+.infrastructure-list,
+.hotel-type,
+.filters,
+.results-sort,
+.search-list,
+.search-nav-buttons,
+.social-links {
+  list-style: none;
+}
+
+/*HEADER*/
+.main-header {
+  position: relative;
+}
+
+.main-nav__wrapper {
+  font-size: 14px;
+  line-height: 28px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  padding: 0 72px;
+}
+
+.main-nav__item {
+  margin: 0;
+  padding: 0;
+  width: 148px;
+  text-align: left;
+  padding: 13px 0;
+}
+
+.main-nav__item:nth-child(3),
+.main-nav__item:nth-child(4) {
+  text-align: right;
+}
+
+.main-nav__item:nth-child(2) {
+  margin-right: 184px;
+}
+
+.main-header__logo {
+  padding: 0;
+  margin: 0;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 140px;
+  height: 72px;
+  cursor: pointer;
+}
+
+.main-nav__link {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+	color: #000000;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+	color: #81b3d2;
+}
+
+.main-nav__link:active {
+	color: #000000;
+  opacity: 0.3;
+}
+
+/*MAIN*/
+.intro-image {
+  width: 459px;
+  height: 353px;
+  margin: 75px auto;
+}
