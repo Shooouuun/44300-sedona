@@ -47,6 +47,10 @@ a {
   text-decoration: none;
 }
 
+:focus {
+  background: #81b3d2;
+}
+
 /**********HEADER**********/
 .page-header {
   position: relative;
@@ -195,10 +199,9 @@ a {
 .advantages__information {
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
   text-align: center;
   align-items: center;
-  padding: 46px 4% 0;
+  padding-top: 46px;
   min-width: 33.333%;
 }
 
@@ -211,6 +214,7 @@ a {
 .advantages__number {
   margin: 24px 0 21px;
 }
+
 
 .advantages__img {
   position: relative;
@@ -266,4 +270,25 @@ a {
 .hints-souvenirs::before {
   width: 64px;
   background-position: -3px -3px;
+}
+
+.color-block {
+  background: #eeeeee;
+  color: #000000;
+}
+
+.color-about {
+  color: #333333;
+}
+
+.advantages__about--city {
+  margin: 0 15%;
+}
+
+.advantages__about--bridge {
+  margin: 0 40px;
+}
+
+.advantages__about--bridge {
+  margin: 0 65px;
 }
