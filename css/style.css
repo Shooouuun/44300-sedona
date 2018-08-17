@@ -292,3 +292,103 @@ a {
 .advantages__about--bridge {
   margin: 0 65px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.advantages__list {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  overflow: hidden;
+  width: 33.334%;
+  min-height: 256px;
+}
+
+.advantages__item:nth-child(2),
+.advantages__item:nth-child(6)  {
+  width: 66.667%;
+}
+
+.advantages__item:nth-child(n+3):nth-child(-n+5) {
+  min-height: 330px;
+}
+
+.advantages__item:nth-child(1),
+.advantages__item:nth-child(7) {
+  background: #81b3d2;
+  color: #ffffff;
+}
+
+.advantages__item:nth-child(n+8):nth-child(-n+10) {
+  background: #eeeeee;
+}
+
+.advantages__img--size {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(-50%);
+}
+
+.hints__information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 45px 0;
+}
+
+.hints__information::before {
+  display: block;
+  content: "";
+  width: 75px;
+  height: 76px;
+  background: url("img/css_sprites.png") no-repeat;
+  margin-bottom: 28px;
+}
+
+.hints__information--home::before {
+  background-position: -154px 1px;
+}
+
+.advantages__item--food::before {
+  background-position: -73px 2px;
+}
+
+.advantages__item--souvenirs::before {
+  background-position: 2px -3px;
+}
+
+.advantages__information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 46px 12% 0;
+}
+
+.advantages__title {
+  width: 151px;
+  margin-bottom: 25px;
+  font-size: 21px;
+}
+
+.advantages__number {
+  margin-bottom: 20px;
+}
