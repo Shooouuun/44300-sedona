@@ -114,7 +114,8 @@ a {
   opacity: 0.3;
 }
 
-/*MAIN*/
+/**********MAIN**********/
+/**********INTRO**********/
 .intro-img {
   display: flex;
   flex-direction: column;
@@ -153,156 +154,6 @@ a {
   font-weight: 700;
   color: #000000;
 }
-
-.feature {
-  display: flex;
-  flex-flow: row nowrap;
-  text-align: center;
-}
-
-.feature-item {
-  display: flex;
-  height: 256px;
-  background: #81b3d2;
-}
-
-.feature-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  width: 33%;
-  padding: 0 6%;
-
-  text-align: center;
-  color: #ffffff;
-}
-
-.lead {
-  font-size: 21px;
-  font-weight: 700;
-}
-
-.advantages__wrapper {
-  display: flex;
-  flex-wrap: row nowrap;
-  min-height: 256px;
-
-  background: #81b3d2;
-  color: #ffffff;
-}
-
-.advantages__wrapper--color {
-  background: #eeeeee;
-  color: #333333;
-}
-
-.advantages__information {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding-top: 46px;
-  min-width: 33.333%;
-}
-
-.advantages__title {
-  width: 151px;
-  font-size: 21px;
-  font-weight: 700;
-}
-
-.advantages__number {
-  margin: 24px 0 21px;
-}
-
-
-.advantages__img {
-  position: relative;
-  min-width: 66.667%;
-  overflow: hidden;
-}
-
-.advantages__img--size {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: auto;
-  transform: translateY(-50%);
-}
-
-.hints__wrapper {
-  display: flex;
-  min-height: 330px;
-  list-style: none;
-
-  background: #eeeeee;
-}
-
-.hints__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 56px 45px 0;
-  width: 33.334%;
-}
-
-.hints__title {
-  margin: 20px 0 24px;
-  font-size: 21px;
-}
-
-.hints__item::before {
-  display: block;
-  content: "";
-  width: 76px;
-  height: 76px;
-  background: url("../img/css_sprites.png") no-repeat;
-  background-position: -153px 1px;
-  margin: 0 auto 8px;
-}
-
-.hints-food::before {
-  background-position: -72px 2px;
-}
-
-.hints-souvenirs::before {
-  width: 64px;
-  background-position: -3px -3px;
-}
-
-.color-block {
-  background: #eeeeee;
-  color: #000000;
-}
-
-.color-about {
-  color: #333333;
-}
-
-.advantages__about--city {
-  margin: 0 15%;
-}
-
-.advantages__about--bridge {
-  margin: 0 40px;
-}
-
-.advantages__about--bridge {
-  margin: 0 65px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 .advantages__list {
@@ -360,7 +211,7 @@ a {
   content: "";
   width: 75px;
   height: 76px;
-  background: url("img/css_sprites.png") no-repeat;
+  background: url("../img/css_sprites.png") no-repeat;
   margin-bottom: 28px;
 }
 
@@ -392,3 +243,4 @@ a {
 .advantages__number {
   margin-bottom: 20px;
 }
+/**********SEARCH-HOTEL**********/
