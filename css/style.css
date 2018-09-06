@@ -65,6 +65,7 @@ a {
   width: 88%;
   margin: 0 auto;
   list-style: none;
+  color: #000000;
 }
 
 .main-nav__item {
@@ -162,29 +163,36 @@ a {
 }
 
 .advantages__item {
-  position: relative;
+  display: flex;
   overflow: hidden;
-  width: 33.334%;
+  width: 100%;
   min-height: 256px;
 }
 
-.advantages__item:nth-child(2),
-.advantages__item:nth-child(6)  {
-  width: 66.667%;
-}
-
-.advantages__item:nth-child(n+3):nth-child(-n+5) {
+.advantages__item:nth-child(2) {
   min-height: 330px;
 }
 
 .advantages__item:nth-child(1),
-.advantages__item:nth-child(7) {
+.advantages__item:nth-child(3) {
   background: #81b3d2;
   color: #ffffff;
 }
 
-.advantages__item:nth-child(n+8):nth-child(-n+10) {
+.advantages__item:last-child {
   background: #eeeeee;
+}
+
+.advantages__information {
+  display: flex;
+  flex-direction: column;
+  padding: 47px 4% 0;
+  width: 33.334%;
+}
+
+.advantages__img {
+  position: relative;
+  width: 66.667%;
 }
 
 .advantages__img--size {
@@ -196,8 +204,28 @@ a {
   transform: translateY(-50%);
 }
 
+.advantages__title {
+  width: 151px;
+  margin: 0 auto 23px;
+  font-size: 21px;
+  color: #000000;
+}
+
+.advantages__title--color {
+  color: #ffffff;
+}
+
+.advantages__number {
+  margin-bottom: 21px;
+}
+
+.advantages__about {
+  margin-bottom: 20px;
+}
+
 .hints__information {
   display: flex;
+  width: 33.33%;
   flex-direction: column;
   padding: 56px 45px 0;
 }
@@ -222,22 +250,6 @@ a {
 .advantages__item--souvenirs::before {
   background: url("../img/icon-2.svg") 6px 0px no-repeat;
 }
-
-.advantages__information {
-  display: flex;
-  flex-direction: column;
-  padding: 47px 12% 0;
-}
-
-.advantages__title {
-  width: 151px;
-  margin: 0 auto 23px;
-  font-size: 21px;
-}
-
-.advantages__number {
-  margin-bottom: 21px;
-}
 /**********SEARCH-HOTEL**********/
 .search-hotel {
   height: 291px;
@@ -257,6 +269,7 @@ a {
   font-size: 30px;
   line-height: 36px;
   margin-bottom: 25px;
+  color: #000000;
 }
 
 .search-hotel__text {
@@ -416,7 +429,6 @@ a {
   background-color: #a9a9a9;
 }
 
-
 .minus:hover::before,
 .plus:hover::before,
 .plus:hover::after {
@@ -428,7 +440,6 @@ a {
 .plus:active::after {
   background-color: #81b3d2;
 }
-
 
 .persons-num-input {
   width: 38px;
@@ -512,8 +523,14 @@ a {
   background-color: rgba(255,255,255,.9);
 }
 
+.inner-page .main-footer {
+  position: static;
+  margin: 0 auto;
+}
+
 .footer__item {
   width: 100%;
+  color: #000000;
 }
 
 .footer-social__hashtag {
@@ -575,4 +592,3 @@ a {
 .footer-social__copyright span {
   margin-bottom: 3px;
 }
-584
