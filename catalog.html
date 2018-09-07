@@ -29,18 +29,19 @@
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">информация</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="photo-video.html">фото и видео</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="map.html">карта штата</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="hotels.html">гостиницы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link active">гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Подбор отеля в Седоне</h1>
-      <section class="search-hotel-form">
+
+      <section class="search-hotels-filter">
         <h2 class="visually-hidden">Параметры подбора</h2>
-        <form action="https://htmlacademy.ru/echo" method="POST">
-          <div class="infrastructure">
-            <h3>Инфраструктура:</h3>
-            <!-- Элементы формы -->
+
+        <form class="hotels-filter" action="https://htmlacademy.ru/echo" method="post">
+          <div class="hotels-filter__list">
+            <h3 class="filter-title">Инфраструктура:</h3>
             <label class="search-form-checkbox" for="infrastructure-pool">
               <input class="visually-hidden" type="checkbox" id="infrastructure-pool" name="infrastructure-pool-chekbox" value="yes" checked>
               <span class="checkbox-indicator"></span>
@@ -57,8 +58,8 @@
               Wi-Fi
             </label>
           </div>
-          <div class="housing-type">
-            <h3>Тип жилья:</h3>
+          <div class="hotels-filter__list">
+            <h3 class="filter-title">Тип жилья:</h3>
             <label class="search-form-checkbox" for="housing-type-hotel">
               <input class="visually-hidden" type="checkbox" id="housing-type-hotel" name="housing-type-hotel-chekbox" value="yes" checked>
               <span class="checkbox-indicator"></span>
@@ -75,23 +76,31 @@
               Апартаменты
             </label>
           </div>
-          <div class="price">
-            <h3>Стоимость в сутки (Р):</h3>
+          <div class="hotels-filter__price">
+            <h3 class="filter-title__price">Стоимость в сутки (Р):</h3>
             <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              <label class="min-price" for="min-price">от <input class="min-price__input" id="min-price" type="text" name="min-price" value="0"></label>
+              <label class="max-price" for="max-price">до <input class="max-price__input" id="max-price" type="text" name="max-price" value="3000"></label>
             </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
+
+
+            <div class="filters__price-range">
+              <div class="filters__price-scale">
+                <div class="filters__price-scale-value"></div>
+                </div>
+              <span class="filters__price-control filters__price-control--min" tabindex="0">Минимум</span>
+              <span class="filters__price-control filters__price-control--max" tabindex="0">Максимум</span>
             </div>
-            <button class="submit-btn" type="submit" name="search-hotel-form-submit">Показать</button>
+
+
+
+            <button class="submit-btn-" type="submit" name="search-hotel-form-submit">Показать</button>
           </div>
         </form>
       </section>
+
+
+
       <section class="search-results-sort">
         <h2 class="visually-hidden">Сортировка результатов</h2>
         <p class="results-count">Найдено: 3</p>
