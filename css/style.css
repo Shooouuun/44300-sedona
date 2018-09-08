@@ -891,3 +891,132 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator {
 .hotels__list {
   list-style: none;
 }
+/*********SEARCH__RESULTS**********/
+.hotels__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hotels__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 25px 6% 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels__item-photo {
+  padding-top: 5px;
+  margin-right: 30px;
+}
+
+.hotels__item-photo img {
+  display: block;
+  width: 135px;
+  height: 90px;
+}
+
+.hotels__item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 7px;
+}
+
+.hotels__item-type {
+  min-width: 110px;
+  margin-right: 6px;
+}
+
+.hotels__item-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 14px;
+}
+
+.hotels__more-info {
+  margin-right: 6px;
+}
+
+.hotels__item-name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}
+
+.hotels__item-name:hover,
+.hotels__item-name:focus {
+  color: #81b3d2;
+}
+
+.hotels__item-name:active {
+  color: rgba(0, 0 ,0, 0.3);
+}
+
+.hotels__item-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+}
+
+.hotels__item-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 4px;
+  width: 114px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.star {
+  width: 18px;
+  height: 17px;
+  text-indent: -1000px;
+  overflow: hidden;
+  background: url(../img/star.svg) no-repeat top left;
+  background-size: 18px 17px;
+}
+
+.star + .star {
+  margin-left: 5px;
+}
+
+.rating {
+  display: inline-block;
+  vertical-align: top;
+  padding: 3px 14px 3px;
+  min-width: 110px;
+  background-color: #f2f2f2;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
