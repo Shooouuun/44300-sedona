@@ -35,10 +35,8 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Подбор отеля в Седоне</h1>
-
       <section class="search-hotels-filter">
         <h2 class="visually-hidden">Параметры подбора</h2>
-
         <form class="hotels-filter" action="https://htmlacademy.ru/echo" method="post">
           <div class="hotels-filter__list">
             <h3 class="filter-title">Инфраструктура:</h3>
@@ -82,8 +80,6 @@
               <label class="min-price" for="min-price">от <input class="min-price__input" id="min-price" type="text" name="min-price" value="0"></label>
               <label class="max-price" for="max-price">до <input class="max-price__input" id="max-price" type="text" name="max-price" value="3000"></label>
             </div>
-
-
             <div class="filters__price-range">
               <div class="filters__price-scale">
                 <div class="filters__price-scale-value"></div>
@@ -91,46 +87,40 @@
               <span class="filters__price-control filters__price-control--min" tabindex="0">Минимум</span>
               <span class="filters__price-control filters__price-control--max" tabindex="0">Максимум</span>
             </div>
-
-
-
-            <button class="submit-btn-" type="submit" name="search-hotel-form-submit">Показать</button>
+            <button class="submit-filter-btn" type="submit" name="search-hotel-form-submit">Показать</button>
           </div>
         </form>
       </section>
-
-
-
-      <section class="search-results-sort">
-        <h2 class="visually-hidden">Сортировка результатов</h2>
-        <p class="results-count">Найдено: 3</p>
-        <p>Сортировка:</p>
-        <ul class="sort-list">
-          <li class="sort-list-item">
-            <a class="button-sort sort-price active">По цене</a>
-          </li>
-          <li class="sort-list-item">
-            <a href="#" class="button-sort sort-type">По типу</a>
-          </li>
-          <li class="sort-list-item">
-            <a href="#" class="button-sort sort-rate">По рейтингу</a>
-          </li>
-        </ul>
-        <ul class="sort-list-direction">
-        <li class="sort-list-direction-item">
-          <a href="#" class="button-sort-direction">
-            <span class="visually-hidden">По возрастанию</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
-          </a>
-        </li>
-        <li class="sort-list-direction-item">
-          <a class="button-sort-direction active">
-            <span class="visually-hidden">По убыванию</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
-          </a>
-        </li>
-        </ul>
+      <section class="hotels__sort">
+        <div class="hotels__sort-title">
+          <h3 class="visually-hidden">Сортировка результатов</h3>
+          <div class="hotels__sort-result-title">Найдено: <span class="hotels__sort-result-count" id="hotels-count">3</span></div>
+        </div>
+        <div class="hotels__sort-types">
+          <ul class="hotels__sort-list">
+            <li class="hotels__sort-list-title">Сортировка:</li>
+            <li class="hotels__sort-item"><a class="hotels__sort-link  hotels__sort-link--active" href="#">По цене</a></li>
+            <li class="hotels__sort-item"><a class="hotels__sort-link" href="#">По типу</a></li>
+            <li class="hotels__sort-item">
+              <a class="hotels__sort-link" href="#">По рейтингу</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hotels__updown-sort">
+          <ul class="hotels__updown-sort-list">
+            <li class="hotels__updown-sort-item">
+              <a class="hotels__updown-sort-link  hotels__updown-sort-link--up" href="#">По возрастанию</a>
+            </li>
+            <li class="hotels__updown-sort-item">
+              <a class="hotels__updown-sort-link  hotels__updown-sort-link--down  hotels__updown-sort-link--active" href="#">По убыванию</a>
+            </li>
+          </ul>
+        </div>
       </section>
+
+
+
+
       <section class="search-results">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="search-results-hotel">
