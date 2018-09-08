@@ -925,10 +925,7 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-top: 7px;
 }
 
@@ -938,18 +935,13 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator {
 }
 
 .hotels__item-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-top: 14px;
 }
 
 .hotels__more-info {
-  margin-right: 6px;
+  margin-right: 7px;
 }
 
 .hotels__item-name {
@@ -1017,6 +1009,34 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator {
   padding: 3px 14px 3px;
   min-width: 110px;
   background-color: #f2f2f2;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
+}
+
+.btn {
+  padding: 3px 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.btn.btn--action {
+  background-color: #766357;
+}
+
+.btn.btn--action:focus, .btn.btn--action:hover {
+  background-color: #604e43;
+}
+
+.btn.btn--action:active {
+  background-color: #503e33;
+}
+
+.btn:focus, .btn:hover {
+  background-color: #669ec0;
+}
+
+.btn:active {
+  color: rgba(255,255,255,.3);
+  background-color: #5496bd;
 }
