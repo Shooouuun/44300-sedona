@@ -42,12 +42,12 @@
             <div class="hotels-filter__list">
               <h3 class="filter-title">Инфраструктура:</h3>
               <label class="search-form-checkbox" for="infrastructure-pool">
-                <input class="visually-hidden" type="checkbox" id="infrastructure-pool" name="infrastructure-pool-chekbox" value="yes" checked>
+                <input class="visually-hidden checkbox-filter" type="checkbox" id="infrastructure-pool" name="infrastructure-pool-chekbox" value="yes" checked>
                 <span class="checkbox-indicator"></span>
                 Бассейн
               </label>
               <label class="search-form-checkbox" for="infrastructure-parking">
-                <input class="visually-hidden" type="checkbox" id="infrastructure-parking" name="infrastructure-parking-chekbox" value="yes">
+                <input class="visually-hidden checkbox-filter" type="checkbox" id="infrastructure-parking" name="infrastructure-parking-chekbox" value="yes">
                 <span class="checkbox-indicator"></span>
                 Парковка
               </label>
@@ -95,29 +95,22 @@
         <section class="hotels__sort">
           <h2 class="visually-hidden">Сортировка поиска</h2>
           <div class="hotels__sort-title">
-            <h3 class="visually-hidden">Сортировка результатов</h3>
-            <div class="hotels__sort-result-title">Найдено:
-              <span class="hotels__sort-result-count" id="hotels-count">3</span>
-            </div>
+            <span class="hotels__sort-result-count" id="hotels-count">Найдено: 3</span>
           </div>
-          <div class="hotels__sort-types">
-            <ul class="hotels__sort-list">
-              <li class="hotels__sort-list-title">Сортировка:</li>
-              <li class="hotels__sort-item"><a class="hotels__sort-link  hotels__sort-link--active" href="#">По цене</a></li>
-              <li class="hotels__sort-item"><a class="hotels__sort-link" href="#">По типу</a></li>
-              <li class="hotels__sort-item"><a class="hotels__sort-link" href="#">По рейтингу</a></li>
+          <ul class="hotels__sort-list">
+            <li class="hotels__sort-list-title">Сортировка:</li>
+            <li class="hotels__sort-item"><a class="hotels__sort-link  hotels__sort-link--active" href="#">По цене</a></li>
+            <li class="hotels__sort-item"><a class="hotels__sort-link" href="#">По типу</a></li>
+            <li class="hotels__sort-item"><a class="hotels__sort-link" href="#">По рейтингу</a></li>
+          </ul>
+          <ul class="hotels__updown-sort-list">
+            <li class="hotels__updown-sort-item">
+              <a class="hotels__updown-sort-link hotels__updown-sort-link--up" href="#">По возрастанию</a>
+            </li>
+            <li class="hotels__updown-sort-item">
+              <a class="hotels__updown-sort-link hotels__updown-sort-link--down  hotels__updown-sort-link--active" href="#">По убыванию</a>
+            </li>
             </ul>
-          </div>
-          <div class="hotels__updown-sort">
-            <ul class="hotels__updown-sort-list">
-              <li class="hotels__updown-sort-item">
-                <a class="hotels__updown-sort-link  hotels__updown-sort-link--up" href="#">По возрастанию</a>
-              </li>
-              <li class="hotels__updown-sort-item">
-                <a class="hotels__updown-sort-link  hotels__updown-sort-link--down  hotels__updown-sort-link--active" href="#">По убыванию</a>
-              </li>
-            </ul>
-          </div>
         </section>
         <section class="search__results">
           <h2 class="visually-hidden">Результаты поиска</h2>
