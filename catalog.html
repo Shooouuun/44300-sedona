@@ -6,7 +6,7 @@
   <link rel="icon" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/min-normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min-style.css">
   <meta name="keywords" content="Седона — небольшой городок в Аризоне">
 </head>
   <body class="inner-page">
@@ -41,39 +41,37 @@
           <form class="hotels-filter" action="https://htmlacademy.ru/echo" method="post">
             <div class="hotels-filter__list">
               <h3 class="filter-title">Инфраструктура:</h3>
-              <label class="search-form-checkbox" for="infrastructure-pool">
-                <input class="visually-hidden checkbox-filter" type="checkbox" id="infrastructure-pool" name="infrastructure-pool-chekbox" value="yes" checked>
-                <span class="checkbox-indicator"></span>
-                Бассейн
-              </label>
-              <label class="search-form-checkbox" for="infrastructure-parking">
-                <input class="visually-hidden checkbox-filter" type="checkbox" id="infrastructure-parking" name="infrastructure-parking-chekbox" value="yes">
-                <span class="checkbox-indicator"></span>
-                Парковка
-              </label>
-              <label class="search-form-checkbox" for="infrastructure-wifi">
-                <input class="visually-hidden" type="checkbox" id="infrastructure-wifi" name="infrastructure-parking-wifi-checkbox" value="yes">
-                <span class="checkbox-indicator"></span>
-                Wi-Fi
-              </label>
+              <ul class="hotels-filter__infrastucture">
+                <li>
+                  <input class="visually-hidden checkbox-filter" type="checkbox" id="infrastructure-pool" name="infrastructure-pool-chekbox" value="yes" checked>
+                  <label class="search-form-checkbox" for="infrastructure-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input class="visually-hidden checkbox-filter" type="checkbox" id="infrastructure-parking" name="infrastructure-parking-chekbox" value="yes">
+                  <label class="search-form-checkbox" for="infrastructure-parking">Парковка</label>
+                </li>
+                <li>
+                  <input class="visually-hidden checkbox-filter" type="checkbox" id="infrastructure-wifi" name="infrastructure-parking-wifi-checkbox" value="yes">
+                  <label class="search-form-checkbox" for="infrastructure-wifi">Wi-Fi</label>
+                </li>
+              </ul>
             </div>
             <div class="hotels-filter__list">
               <h3 class="filter-title">Тип жилья:</h3>
-              <label class="search-form-checkbox" for="housing-type-hotel">
-                <input class="visually-hidden" type="checkbox" id="housing-type-hotel" name="housing-type-hotel-chekbox" value="yes" checked>
-                <span class="checkbox-indicator"></span>
-                Гостиница
-              </label>
-              <label class="search-form-checkbox" for="housing-type-motel">
-                <input class="visually-hidden" type="checkbox" id="housing-type-motel" name="housing-type-motel-chekbox" value="yes" checked>
-                <span class="checkbox-indicator"></span>
-                Мотель
-              </label>
-              <label class="search-form-checkbox" for="housing-type-apartments">
-                <input class="visually-hidden" type="checkbox" id="housing-type-apartments" name="housing-type-apartments-chekbox" value="yes" checked>
-                <span class="checkbox-indicator"></span>
-                Апартаменты
-              </label>
+              <ul class="hotels-filter__type-housing">
+                <li>
+                  <input class="visually-hidden checkbox-filter" type="checkbox" id="housing-type-hotel" name="housing-type-hotel-chekbox" value="yes" checked>
+                  <label class="search-form-checkbox" for="housing-type-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input class="visually-hidden checkbox-filter" type="checkbox" id="housing-type-motel" name="housing-type-motel-chekbox" value="yes" checked>
+                  <label class="search-form-checkbox" for="housing-type-motel">Мотель</label>
+                </li>
+                <li>
+                  <input class="visually-hidden checkbox-filter" type="checkbox" id="housing-type-apartments" name="housing-type-apartments-chekbox" value="yes" checked>
+                  <label class="search-form-checkbox" for="housing-type-apartments">Апартаменты</label>
+                </li>
+              </ul>
             </div>
             <div class="hotels-filter__price">
               <h3 class="filter-title__price">Стоимость в сутки (Р):</h3>
