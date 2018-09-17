@@ -14,6 +14,10 @@ form.addEventListener("submit", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (!arrivalDate.value || !dapertireDate.value) {
     evt.preventDefault();
+    console.log("Необходимо заполнить все поля");
+
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   }
 });

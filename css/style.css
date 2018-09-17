@@ -686,6 +686,7 @@ a {
       flex-wrap: wrap;
   margin: 0 auto;
   list-style: none;
+  width: 100%;
 }
 
 .footer-social__icon li {
