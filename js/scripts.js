@@ -18,6 +18,8 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
+popup.classList.remove("open");
+
 function showForm(e) {
   e.preventDefault();
 
