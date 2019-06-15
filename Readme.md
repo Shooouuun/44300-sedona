@@ -1,5 +1,5 @@
-# Личный проект «Седона». 
-###  Статический стрехстраничный сайт туристического городка в штате Аризона.
+# Personal project «Sedona». 
+###  Static three-page site for a tourist town in Arizona.
 -------
-* Студент: [Sergey Kolgaev](https://up.htmlacademy.ru/htmlcss/22/user/44300).
-* Наставник: `Без наставника`.
+* Student: [Sergey Kolgaev](https://up.htmlacademy.ru/htmlcss/22/user/44300).
+* Mentor: `Without a mentor`.
